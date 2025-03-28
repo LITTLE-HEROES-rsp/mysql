@@ -20,9 +20,13 @@
 ![powershell](./images/powershell.png)
     ```console
     git clone https://github.com/rspharada/mysql.git
-    $Shortcut = (New-Object -ComObject WScript.Shell).CreateShortcut("$env:USERPROFILE\Desktop\mysql.lnk")
-    $Shortcut.TargetPath = "$PWD\mysql"
-    $Shortcut.Save()
+    $desktop = [Environment]::GetFolderPath("Desktop")
+    $targetPath = Join-Path -Path $PWD.Path -ChildPath "mysql"
+
+    $shortcut = (New-Object -ComObject WScript.Shell).CreateShortcut("$desktop\mysql.lnk")
+    $shortcut.TargetPath = $targetPath
+    $shortcut.WorkingDirectory = $targetPath  # ← これが重要！
+    $shortcut.Save()
     ```
 
 ## 2. Docker Desktopをインストールする
