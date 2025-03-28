@@ -20,12 +20,6 @@
 ![powershell](./images/powershell.png)
     ```console
     git clone https://github.com/rspharada/mysql.git
-    $desktop = [Environment]::GetFolderPath("Desktop")
-    $targetPath = Join-Path -Path $PWD.Path -ChildPath "mysql"
-    $shortcut = (New-Object -ComObject WScript.Shell).CreateShortcut("$desktop\mysql.lnk")
-    $shortcut.TargetPath = $targetPath
-    $shortcut.WorkingDirectory = $targetPath
-    $shortcut.Save()
     ```
 
 ## 2. Docker Desktopをインストールする
@@ -89,14 +83,13 @@ https://www.docker.com/ja-jp/products/docker-desktop/
 
 ### Windowsユーザの方
 1. パワーシェルで以下のコマンドを入力し、Enterキーを押して実行します
-
-```console
-
-docker compose up -d
-```
+    ```console
+    cd mysql
+    docker compose up -d
+    ```
 
 2. 下記のコマンドを実行し、MySQLへ接続します。
-```console
-docker compose exec -it mysql  mysql -u root -p 
-```
+    ```console
+    docker compose exec -it mysql  mysql -u root -p 
+    ```
 
