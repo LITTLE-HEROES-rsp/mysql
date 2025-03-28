@@ -82,7 +82,7 @@ https://www.docker.com/ja-jp/products/docker-desktop/
 
 
 ### Windowsユーザの方
-1. パワーシェルで以下のコマンドを入力し、Enterキーを押して実行します
+1. パワーシェルを開いて以下のコマンドを入力し、Enterキーを押して実行します
     ```console
     cd mysql
     docker compose up -d
