@@ -22,7 +22,6 @@
     git clone https://github.com/rspharada/mysql.git
     $desktop = [Environment]::GetFolderPath("Desktop")
     $targetPath = Join-Path -Path $PWD.Path -ChildPath "mysql"
-
     $shortcut = (New-Object -ComObject WScript.Shell).CreateShortcut("$desktop\mysql.lnk")
     $shortcut.TargetPath = $targetPath
     $shortcut.WorkingDirectory = $targetPath  # ← これが重要！
