@@ -1,0 +1,9 @@
+# data, logs, sql の配下は無視する
+data/*
+logs/*
+sql/*
+
+# ただしディレクトリ自体はGitに含めたいので、除外しない
+!data/.gitkeep
+!logs/.gitkeep
+!sql/.gitkeep

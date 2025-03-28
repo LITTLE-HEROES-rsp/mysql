@@ -1,0 +1,36 @@
+name: mysql
+
+networks:
+  # Network
+  mysql:
+    driver: bridge
+
+services:
+  # DB server
+  mysql:
+    container_name: mysql
+    platform: linux/x86_64
+    image: mysql:8.0
+    ports:
+      - 13306:3306
+    environment:
+      MYSQL_PASSWORD: 'root'
+      MYSQL_ROOT_PASSWORD: 'root'
+      MYSQL_DATABASE: 'practice'
+      MYSQL_USER: 'user'
+      TZ: Asia/Tokyo
+    volumes:
+      - type: bind
+        source: ./data
+        target: /var/lib/mysql
+      - type: bind
+        source: ./my.cnf
+        target: /etc/mysql/conf.d/my.cnf
+      - type: bind
+        source: ./logs
+        target: /var/log/mysql
+      - type: bind
+        source: ./sql
+        target: /docker-entrypoint-initdb.d
+    networks:
+      - mysql
