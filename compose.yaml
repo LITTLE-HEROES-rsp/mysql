@@ -24,7 +24,7 @@ services:
         source: ./data
         target: /var/lib/mysql
       - type: bind
-        source: ./my.cnf
+        source: ./config/my.cnf
         target: /etc/mysql/conf.d/my.cnf
       - type: bind
         source: ./logs
