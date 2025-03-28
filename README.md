@@ -24,7 +24,7 @@
     $targetPath = Join-Path -Path $PWD.Path -ChildPath "mysql"
     $shortcut = (New-Object -ComObject WScript.Shell).CreateShortcut("$desktop\mysql.lnk")
     $shortcut.TargetPath = $targetPath
-    $shortcut.WorkingDirectory = $targetPath  # ← これが重要！
+    $shortcut.WorkingDirectory = $targetPath
     $shortcut.Save()
     ```
 
