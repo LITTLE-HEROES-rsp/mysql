@@ -91,5 +91,23 @@ https://www.docker.com/ja-jp/products/docker-desktop/
 2. 下記のコマンドを実行し、MySQLへ接続します。
     ```console
     docker compose exec -it mysql  mysql -u root -p 
+
+    Enter password: ここで「root」と入力してEnterキーを押します。
     ```
 
+3. 実行後、成功すれば下記のメッセージが表示されます。
+    ```
+    Welcome to the MySQL monitor.  Commands end with ; or \g.
+    Your MySQL connection id is 8
+    Server version: 8.0.41 MySQL Community Server - GPL
+
+    Copyright (c) 2000, 2025, Oracle and/or its affiliates.
+
+    Oracle is a registered trademark of Oracle Corporation and/or its
+    affiliates. Other names may be trademarks of their respective
+    owners.
+
+    Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+    mysql>
+    ```
