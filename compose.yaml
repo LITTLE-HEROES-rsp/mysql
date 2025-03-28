@@ -14,10 +14,10 @@ services:
     ports:
       - 13306:3306
     environment:
-      MYSQL_PASSWORD: 'root'
-      MYSQL_ROOT_PASSWORD: 'root'
-      MYSQL_DATABASE: 'practice'
-      MYSQL_USER: 'user'
+      MYSQL_ROOT_PASSWORD: 'root' # 管理者用のパスワード
+      MYSQL_USER: 'student' # 研修参加者用ユーザー名
+      MYSQL_PASSWORD: 'password' # 参加者用パスワード
+      MYSQL_DATABASE: 'training_db' # 研修用データベース名
       TZ: Asia/Tokyo
     volumes:
       - type: bind
