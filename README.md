@@ -39,7 +39,7 @@ https://www.docker.com/ja-jp/products/docker-desktop/
 
 2. 下記のコマンドを実行し、MySQLへ接続します。
     ```console
-    docker compose exec -it mysql  mysql -u root -p 
+    docker compose exec -it mysql mysql -u root -p 
 
     Enter password: ここで「root」と入力してEnterキーを押します。
     ```
@@ -90,7 +90,7 @@ https://www.docker.com/ja-jp/products/docker-desktop/
 
 2. 下記のコマンドを実行し、MySQLへ接続します。
     ```console
-    docker compose exec -it mysql  mysql -u root -p 
+    docker compose exec -it mysql mysql -u root -p 
 
     Enter password: ここで「root」と入力してEnterキーを押します。
     ```
