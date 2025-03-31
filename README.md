@@ -25,9 +25,11 @@
 
 ## 2. Docker Desktopをインストールする
 下記のサイトからDocker Desktopをインストールします。  
+対応するOSを選択して、インストールをしてください。
 https://www.docker.com/ja-jp/products/docker-desktop/
 
-対応するOSを選択して、インストールをしてください。
+OSがWindows Intel版の方はこちらからダウンロードしてインストールしてください（↓）
+https://docs.docker.com/desktop/setup/install/windows-install/
 
 ## 3. MySQLをセットアップ&MySQLに接続する
 
