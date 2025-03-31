@@ -9,23 +9,23 @@
 4. ターミナルに以下のコマンドを入力し、Enterキーを押して実行します。
 ![ターミナル](./images/terminal.png)
     ```console
-    git clone https://github.com/rspharada/mysql.git
+    git clone https://github.com/LITTLE-HEROES-rsp/mysql.git
     ln -s "$(pwd)/mysql" ~/Desktop/mysql
     ```
 
 ### Windowsユーザの方
 1. Windowsキー + R を同時に押します（「ファイル名を指定して実行」ウィンドウが開きます）
-2. 「powershell」と入力し、Enterキーを押します
-3. PowerShell が開きます！
-4. PowerShell の画面で、以下のコマンドを入力し、Enterキーを押して実行します
-![powershell](./images/powershell.png)
+2. 「cmd」と入力し、Enterキーを押します
+3. コマンドプロンプト が開きます！
+4. コマンドプロンプト の画面で、以下のコマンドを入力し、Enterキーを押して実行します
+![コマンドプロンプト](./images/comand_prompt.png)
     ```console
-    git clone https://github.com/rspharada/mysql.git
+    git clone https://github.com/LITTLE-HEROES-rsp/mysql.git
     ```
 
 ## 2. Docker Desktopをインストールする
 下記のサイトからDocker Desktopをインストールします。  
-対応するOSを選択して、インストールをしてください。
+対応するOSを選択して、インストールをしてください。  
 https://www.docker.com/ja-jp/products/docker-desktop/
 
 OSがWindows Intel版の方はこちらからダウンロードしてインストールしてください（↓）
