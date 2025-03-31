@@ -31,7 +31,16 @@ https://www.docker.com/ja-jp/products/docker-desktop/
 OSがWindows Intel版の方はこちらからダウンロードしてインストールしてください（↓）
 https://docs.docker.com/desktop/setup/install/windows-install/
 
-## 3. MySQLをセットアップ&MySQLに接続する
+## 3. Docker Desktopを起動する
+先ほどインストールしたDocker Desktopアプリを起動してください。  
+もし、アカウントの登録を求められた場合、スキップしてください。Docker Desktopは、アカウント登録不要で利用できます。
+
+起動して下記のような画面が表示されていれば成功です。
+
+![Docker Desktop](./images/docker_desktop.png)
+
+
+## 4. MySQLをセットアップ&MySQLに接続する
 
 ### Macユーザの方
 1. ターミナルに以下のコマンドを入力し、Enterキーを押して実行します
@@ -85,7 +94,7 @@ https://docs.docker.com/desktop/setup/install/windows-install/
 
 
 ### Windowsユーザの方
-1. パワーシェルを開いて以下のコマンドを入力し、Enterキーを押して実行します
+1. コマンドプロンプトを開いて以下のコマンドを入力し、Enterキーを押して実行します
     ```console
     cd mysql
     docker compose up -d
