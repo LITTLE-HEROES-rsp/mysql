@@ -73,7 +73,7 @@ https://docs.docker.com/desktop/setup/install/windows-install/
     mysql>
     ```
 
-4. 試しにデータベースが存在すルカ確認してみましょう。下記のコマンドを実行して、データベースが以下のように表示されていれば成功です。
+4. 試しにデータベースが存在するか確認してみましょう。下記のコマンドを実行して、データベースが以下のように表示されていれば成功です。
     ```cinsole
     show databases;
     ````
@@ -122,4 +122,23 @@ https://docs.docker.com/desktop/setup/install/windows-install/
     Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
     mysql>
+    ```
+
+4. 試しにデータベースが存在するか確認してみましょう。下記のコマンドを実行して、データベースが以下のように表示されていれば成功です。
+    ```cinsole
+    show databases;
+    ````
+
+    上記のコマンドを実行した結果↓
+    ```console
+    +--------------------+
+    | Database           |
+    +--------------------+
+    | information_schema |
+    | mysql              |
+    | performance_schema |
+    | sys                |
+    | training_db        |
+    +--------------------+
+    5 rows in set (0.06 sec)
     ```
